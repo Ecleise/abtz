@@ -1,5 +1,5 @@
 
-section{
+section {
     padding: 5% 10%;
 }
 
@@ -10,20 +10,18 @@ section{
     background-position: center;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
 }
 
 .hero2 {
     position: relative;
     width: 100%;
-    min-height: 85vh; /* Altura da seção */
-    
-    /* Gradiente escuro semi-transparente + a imagem de fundo */
+    min-height: 85vh; 
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/images/products/banner-4.jpg');
-    background-size: cover;       /* Faz a imagem cobrir todo o espaço */
-    background-position: center;  /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -122,8 +120,8 @@ section{
     background: rgba(0, 0, 0, 0.8);
 }
 
-.prev-btn { left: 30px; }
-.next-btn { right: 30px; }
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
 
 /* Indicadores (Dots) */
 .carousel-dots {
@@ -146,35 +144,16 @@ section{
 }
 
 .dot.active {
-    background: #EE1C47; /* Combina com a cor do botão */
+    background: #EE1C47;
     transform: scale(1.2);
 }
 
-/* Responsividade para Celulares */
-@media (max-width: 768px) {
-    .carousel-slide {
-        padding: 0 5%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .hero-content2 {
-        max-width: 100%;
-    }
-
-    .hero-content2 h1 {
-        font-size: 2.5rem;
-    }
-
-    .prev-btn { left: 15px; }
-    .next-btn { right: 15px; }
-}
 .center-text h2{
     color: #111;
     font-size: 28px;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
 }
 
 .center-text span{
@@ -183,8 +162,7 @@ section{
 
 .products{
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -194,9 +172,9 @@ section{
 }
 
 .row img{
-   width: 100%;
-   height: auto;
-   transition: all .40s; 
+    width: 100%;
+    height: auto;
+    transition: all .40s; 
 }
 
 .row img:hover{
@@ -227,7 +205,7 @@ section{
 }
 
 .rating i{
-     color: #FF8C00;
+    color: #FF8C00;
 }
 
 .price h4{
@@ -275,7 +253,7 @@ section{
 }
 
 .reviews h2{
-    font-weight: 22px;
+    font-size: 22px; /* Corrigido */
     color: #000;
     font-weight: 400;
     text-transform: capitalize;
@@ -283,24 +261,26 @@ section{
 }
 
 .up-center-text h2{
-      text-align: center;
-      color: #111;
-      font-size: 25px;
-      text-transform: capitalize;
-      font-weight: 700;
-      margin-bottom: 30px;
+    text-align: center;
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
+/* CORRIGIDO PARA SER RESPONSIVO */
 .cart img{
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     height: auto;
     border-radius: 5px;
-
 }
 
+/* CORRIGIDO PARA EVITAR QUEBRAS EM TELAS PEQUENAS */
 .update-cart{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
 }
 
@@ -318,11 +298,11 @@ section{
 }
 
 .cart p{
-   color: #707070;
-   font-size: 15px;
-   max-width: 380px;
-   line-height: 25px;
-   margin-bottom: 12px; 
+    color: #707070;
+    font-size: 15px;
+    max-width: 100%;
+    line-height: 25px;
+    margin-bottom: 12px; 
 }
 
 .cart h6{
@@ -331,8 +311,6 @@ section{
     font-weight: 500;
 }
 
-
- 
 .contact {
     background-color: #2c2c2c;
     padding: 60px 10%;
@@ -349,7 +327,6 @@ section{
     max-width: 350px;
 }
 
-
 .first-info img {
     max-width: 150px;
     height: auto;
@@ -357,8 +334,9 @@ section{
     display: block;
 }
 
+/* CORRIGIDO: Contraste ajustado para o fundo escuro */
 .first-info p {
-    color: #555;
+    color: #bbb;
     font-size: 15px;
     line-height: 1.6;
     margin-bottom: 12px;
@@ -390,7 +368,29 @@ section{
     transform: translateY(-3px);
 }
 
+/* Media Query para Celulares e Tablets */
 @media (max-width: 768px) {
+    section {
+        padding: 8% 5%;
+    }
+
+    .carousel-slide {
+        padding: 0 5%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-content2 {
+        max-width: 100%;
+    }
+
+    .hero-content2 h1 {
+        font-size: 2.3rem; /* Reduzido para caber perfeitamente no celular */
+    }
+
+    .prev-btn { left: 10px; }
+    .next-btn { right: 10px; }
+
     .contact {
         padding: 40px 5%;
         text-align: center;
@@ -409,4 +409,3 @@ section{
         justify-content: center;
     }
 }
-
