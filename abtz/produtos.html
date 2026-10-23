@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+     <link rel="stylesheet" href="/styles/globals.css">
+     <link rel="stylesheet" href="/styles/products.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmH+zLeBuhoNP1a5x5Zl3zV9zzTtmI3UksdQRVvoxMfooAo5tJgyFUV2y6Ww2v1c0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+     <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">Abathandaze<span>-Family</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Products</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li>Contacto</li>
+                    <li>Conta</li>
+                     <li><button id="search-toggle" class="search-icon-btn" title="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                </ul>
+                <div class="search" id="search-container">
+                <form action="search.php" method="GET">
+                   
+                    <input type="text" id="search-input" name="q" placeholder="Search..." list="search-suggestions" autocomplete="off">
+                    
+                    
+                    <datalist id="search-suggestions">
+                        <option value="Roupas Masculinas">
+                        <option value="Roupas Femininas">
+                        <option value="Calçados">
+                        <option value="Acessórios">
+                        <option value="Novidades Abathandaze">
+                    </datalist>
+
+                    <button type="submit">Ir</button>
+                </form>
+            </nav>
+
+            <marque behavior="" direction="left">
+                <div class="nav-icon-container">
+                    <img src="/img/images/logo.png" />
+                    <img src="/img/images/menu.png" class="menu-button" />
+                </div>
+                </marquee>
+        </div>
+    </div>
+
+   <section class="hero2 carousel-container">
+  <!-- Container de Slides -->
+  <div class="carousel-track">
+    
+    <!-- Slide 1 -->
+    <div class="carousel-slide active">
+      <div class="hero-content2">
+        <h1>Confira Os Nossos Produtos</h1>
+        <p>Descubra as melhores peças com os melhores preços para você e sua família.</p>
+        <a href="#trending" class="btn">Confira Agora <i class="fa-solid fa-arrow-down-long"></i></a>
+      </div>
+      <div class="hero-image">
+        <img src="img/images/products/banner-4.jpg" alt="Produtos em destaque" />
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-slide">
+      <div class="hero-content2">
+        <h1>Nova Coleção Exclusiva</h1>
+        <p>Estilo e conforto pensados especialmente para destacar o seu visual.</p>
+        <a href="#update-news" class="btn">Ver Coleção <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-image">
+        <img src="img/images/products/banner-5.jpg" alt="Nova Coleção" />
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-slide">
+      <div class="hero-content2">
+        <h1>Ofertas Especiais</h1>
+        <p>Aproveite descontos imperdíveis por tempo limitado.</p>
+        <a href="#ofertas" class="btn">Aproveitar <i class="fa-solid fa-tag"></i></a>
+      </div>
+      <div class="hero-image">
+        <img src="img/images/products/banner-6.jpg" alt="Ofertas Especiais" />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botões de Navegação -->
+  <button class="carousel-btn prev-btn" aria-label="Slide anterior">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+  <button class="carousel-btn next-btn" aria-label="Próximo slide">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+  <!-- Indicadores (Dots) -->
+  <div class="carousel-dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+  </div>
+</section>
+<section class="trending-product" id="trending">
+    <div class="center-text">
+        <h2>Produtos em <span>Alta</span></h2>
+    </div>
+
+    <div class="products">
+
+    
+        <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/1.jpg" alt="Half Running Shoe 1">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+       
+        <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/2.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+        
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/3.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/4.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/5.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/6.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/7.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/8.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/1 (1).jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="product-img">
+                <img src="img/images/products/8.jpg" alt="Half Running Shoe 2">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="hearter-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running</h4>
+                <p>99 - 129 Mzn</p>
+            </div>
+        </div>
+       
+
+    </div>
+</section>
+
+<section class="client-reviews">
+    <div class="reviews">
+        <h3>Client Reviews</h3>
+        <img src="img/images/products/bl-2.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto unde, ipsum accusamus at culpa iste cumque natus exercitationem necessitatibus facilis aliquid aperiam deleniti reiciendis. Minima labore magni assumenda pariatur aperiam.</p>
+
+
+        <h2>Ecleise SB</h2>
+        <p>CEO of SB Group</p>
+    </div>
+</section>
+
+<section class="update-news">
+       <div class="up-center-text">
+        <h2>New Updates</h2>
+       </div>
+
+       <div id="update-news" class="update-cart">
+         <div class="cart">
+            <img src="img/images/products/bl-1.png" alt="">
+            <h5>26 jan </h5>
+            <h4> Vamos Começar As vendas Vocacionais Neste Veraáo </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni blanditiis excepturi, voluptatum deleniti molestias laborum praesentium soluta ex dolorum ipsam? Expedita necessitatibus laudantium sit libero quaerat, unde nam accusamus!</p>
+
+            <h6>Continue Reading....</h6>
+         </div>
+
+         <div class="update-cart">
+         <div class="cart">
+            <img src="img/images/products/bl-2.png" alt="">
+            <h5>26 jan </h5>
+            <h4> Vamos Começar As vendas Vocacionais Neste Veraáo </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni blanditiis excepturi, voluptatum deleniti molestias laborum praesentium soluta ex dolorum ipsam? Expedita necessitatibus laudantium sit libero quaerat, unde nam accusamus!</p>
+
+            <h6>Continue Reading....</h6>
+         </div>
+
+         <div class="update-cart">
+         <div class="cart">
+            <img src="img/images/products/bl-3.png" alt="">
+            <h5>26 jan </h5>
+            <h4> Vamos Começar As vendas Vocacionais Neste Veraáo </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni blanditiis excepturi, voluptatum deleniti molestias laborum praesentium soluta ex dolorum ipsam? Expedita necessitatibus laudantium sit libero quaerat, unde nam accusamus!</p>
+
+            <h6>Continue Reading....</h6>
+         </div>
+       </div>
+
+</section>
+
+
+<section class="contact">
+    <div class="contact-info">
+        <div class="first-info">
+            <img src="img/images/logo.png" alt="">
+
+            <p>3245 Grant Street Longview, <br> TX united kingdom 765378</p>
+            <p><b>+258</b> 876765152</p>
+            <p>abathandazefamily@gmail.com</p>
+
+            <div class="social-icon">
+                <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" ><i class="fa-brands fa-instagram"></i>
+                </a><a href="#" ><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <a href="https://wa.me/258876765152" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+<script src="https://kit.fontawesome.com/c6fac88e38.js" crossorigin="anonymous"></script>
+<script src="script.js" type="module"></script>
+
+</html>
